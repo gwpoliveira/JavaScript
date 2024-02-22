@@ -15,17 +15,21 @@ const n03 = Number(input.question('Etre com a terceira nota: '))
 
 var media = ((n01+n02+n03)/3)
 
-if (media >= 7){
+function calcule_media(media){
+    if (media >= 7){
 
-    console.log(`Aluno aprovado com media igual a ${media}`)
-
-}else if (media < 7 & media >=5){
-
-    console.log(`Aluno em prova final com media igual a ${media}`)
-
-} else{
+        console.log(`Aluno aprovado com media igual a ${media}`)
     
-    console.log(`Aluno reprovado com media igual a ${media}`)
+    }else if (media < 7 & media >=5){
+    
+        console.log(`Aluno em prova final com media igual a ${media}`)
+    
+    } else{
+        
+        console.log(`Aluno reprovado com media igual a ${media}`)
+    }
 }
+
+calcule_media(media)
 
 

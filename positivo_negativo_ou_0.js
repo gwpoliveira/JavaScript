@@ -6,13 +6,19 @@ var input = require('readline-sync')
 
 var numero = Number(input.question('\nDigie um número para saber se é positivo, negativo ou zero:\n'))
 
-if (numero === 0) {
-    console.log(`O número digitado é ${numero} e ele é o zero`)
+function positivo_negativo_ou_0(numero){
 
-} else if (numero > 0 ){
-    console.log(`O número digitado é ${numero} e ele é positivo`)
+    if (numero === 0) {
+        console.log(`O número digitado é ${numero} e ele é o zero`)
     
-} else{
-    console.log(`O número digitado é ${numero} e ele é negativo`)
+    } else if (numero > 0 ){
+        console.log(`O número digitado é ${numero} e ele é positivo`)
+        
+    } else{
+        console.log(`O número digitado é ${numero} e ele é negativo`)
+    
+    }
 
 }
+
+positivo_negativo_ou_0(numero)

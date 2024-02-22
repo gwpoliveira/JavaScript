@@ -6,9 +6,13 @@ var input = require('readline-sync')
 
 var numero = Number(input.question("Digite um numero: "))
 
-if (numero % 2 === 0){
-    console.log(`O Numero ${numero} é par`)
+function par_ou_impar(numero){
+    if (numero % 2 === 0){
+        console.log(`O Numero ${numero} é par`)
+    }
+    else{
+        console.log(`O Numero ${numero} é impar`)
+    }
 }
-else{
-    console.log(`O Numero ${numero} é impar`)
-}
+
+par_ou_impar(numero)

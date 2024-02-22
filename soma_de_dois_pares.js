@@ -4,4 +4,26 @@
 
 var input = require('readline-sync')
 
-var conte = Number(input.question('\nDigie um numero positivo para servir de para metro e fazer :\n'))
+var soma = 0
+
+var num = Number(input.question('\nDigie um numero positivo para servir de parametro para pegar os numeros pares e fazer sua soma :\n'))
+
+function soma_pares(num,soma){
+
+    for ( let cont = 1; cont <= num; cont ++){
+    
+        if (cont % 2 == 0){        
+    
+            soma = cont + soma
+    
+        }
+    }
+
+    return console.log(soma)
+
+}
+
+soma_pares(num,soma)
+
+
+
