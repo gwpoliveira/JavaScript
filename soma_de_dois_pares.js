@@ -12,7 +12,7 @@ function soma_pares(num,soma){
 
     for ( let cont = 1; cont <= num; cont ++){
     
-        if (cont % 2 == 0){        
+        if (cont % 2 === 0){        
     
             soma = cont + soma
     
